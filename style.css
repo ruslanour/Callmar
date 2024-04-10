@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: none;
+    border: none;
+
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    background: linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    width: 1520px;
+    margin: auto;
+    margin-top: 75px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header button {
+    font-size: 18px;
+    color: #FCFCFC;
+    line-height: 20px;
+}
+
+header button:nth-of-type(2) {
+    padding: 10px 38px;
+    border-radius: 5px;
+    border: solid 2px white;
+}
+
+header button:hover {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    z-index: 10;
+
+}
+
+.banner {
+    background: linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+    width: 100%;
+    height: 100vh;
+    margin-top: -129px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@keyframes bubbleRight {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes bubbleLeft {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-500deg);
+    }
+}
+
+.banner::before {
+    content: url(/Пузырь\ 18.svg);
+    position: relative;
+    width: 1500px;
+    bottom: -600px;
+    animation: bubbleRight linear 5s infinite alternate;
+}
+
+.banner::after {
+    content: url(/Пузырь\ 17.svg);
+    position: relative;
+    bottom: 300px;
+    right: -600px;
+    animation: bubbleLeft linear 5s infinite alternate;
+}
+
+.banner h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    color: aliceblue;
+    margin-top: -10px;
+}
+
+.banner p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.banner button {
+    background: #D75C78;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 17px 55px;
+    color: white;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background: #DF4C6E;
+}
+
+.banner button:active {
+    color: #FCFCFC;
+}
+
+.banner img {
+    margin-top: 60px;
+    width: 1100px;
+}
+
+.install {
+    width: 1520px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.install_left,
+.install_right {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.install_left {
+    margin-top: 460px;
+}
+
+.install_right::before {
+    content: url(./right.svg);
+}
+
+.install_left::after {
+    content: url(./diver\ left.png);
+    zoom: 11%;
+}
+
+.install_item {
+    width: 738px;
+    height: 308px;
+    border-radius: 5px;
+    box-shadow: 5px 22px 45px 33px 0px #00000040;
+    background: #523A64;
+    color: white;
+
+    padding: 85px 200px 178px 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+}
+
+.install_left .install_item:nth-child(1)::before {
+    content: '01';
+    font-size: 96px;
+    color: #944B6E;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
+
+.install_left .install_item:nth-child(2)::before {
+    content: '03';
+    font-size: 96px;
+    color: #944B6E;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
+
+.install_right .install_item:nth-child(1)::before {
+    content: '02';
+    font-size: 96px;
+    color: #944B6E;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
+
+.install_right .install_item:nth-child(2)::before {
+    content: '04';
+    font-size: 96px;
+    color: #944B6E;
+    font-weight: bold;
+    position: absolute;
+    left: -18px;
+    top: 43px;
+}
+.media h1 {
+color: white;
+font-size: 64px;
+line-height: 96px;
+margin-left: 10%;
+margin-bottom: 70px;
+}
+.media iframe {
+    width: 50%;
+    height: 468px;
+    ;
+    
+}
